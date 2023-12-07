@@ -1,0 +1,155 @@
+.header {
+    width: 100%;
+    background-color: var(--primary);
+    border-bottom: solid 1px var(--secondary);
+    color: var(--typography);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    z-index: 99;
+
+    padding: 0px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        justify-content: center;
+    }
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    padding: 0 15px;
+}
+
+.navitem {
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    position: relative;
+    transition: .3s ease-in-out;
+    display: none;
+    color: var(--typography);
+}
+
+@media (min-width: 1024px) {
+    .navitem {
+        display: inline-block;
+    }
+}
+
+.navitem:hover {
+    color: #ce46ff;
+}
+
+.navitem::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    border-radius: 8px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #e292ff;
+
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.navitem:hover::after {
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+.toggle-navbar {
+    background: none;
+    border: none;
+    font-size: 25px;
+}
+
+.toggle-navbar > i {
+    color: var(--typography);
+}
+
+@media (min-width: 1024px) {
+    .toggle-navbar {
+        display: none;
+    }
+}
+
+.mobile-navbar {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 0 0 10px 10px;
+    position: fixed;
+    width: 100%;
+    top: -100%;
+    z-index: 98;
+    transition: 500ms;
+}
+
+.togglenav {
+    top: 55px;
+}
+
+.navitems {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 20px;
+}
+
+.navitem-mobile {
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: white;
+}
+
+@media (min-width: 1024px) {
+    .mobile-navbar {
+        display: none;
+    }
+}
+
+.themebuttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.switch {
+    background: none;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--typography);
+    color: var(--primary);
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

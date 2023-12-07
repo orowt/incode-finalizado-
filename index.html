@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="normal">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InCode</title>
+
+  <link rel="stylesheet" href="./globalcss/resets.css" />
+  <link rel="stylesheet" href="./globalcss/animations.css" />
+  <link rel="stylesheet" href="./navbar.css" />
+  <link rel="stylesheet" href="./styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="header">
+    <div class="navbar">
+      <div class="themebuttons">
+        <button class="switch" onclick="setTheme('normal')">
+          <i class="fa-solid fa-star"></i>
+        </button>
+        <button class="switch" onclick="setTheme('light')">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="switch" onclick="setTheme('dark')">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+      <a class="navitem" href="#start">INÍCIO</a>
+      <a class="navitem" href="#about">SOBRE NÓS</a>
+      <img src="./imgs/incode-logo-2.svg" alt="Logo da Incode" class="logo" />
+      <a class="navitem" href="#team">EQUIPE</a>
+      <a class="navitem">COMUNIDADE</a>
+      <button class="toggle-navbar" onclick="toggleNav()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+  <!-- toggle navbar -->
+  <nav class="mobile-navbar">
+    <div class="navitems">
+      <a class="navitem-mobile" href="#start">EQUIPE</a>
+      <a class="navitem-mobile" href="#about">SOBRE NÓS</a>
+      <a class="navitem-mobile" href="#team">EQUIPE</a>
+      <a class="navitem-mobile">COMUNIDADE</a>
+    </div>
+  </nav>
+  <!-- NAVBAR -->
+
+  <!-- CONTEÚDO -->
+  <div class="container">
+    <section class="hero-section" id="start">
+      <div class="hero-content">
+        <div class="hero-description">
+          <h1>APRENDER</h1>
+          <div class="hero-inner-description">
+            <h2>O</h2>
+            <div class="hero-inner-inner-description">
+              <h3>NOVO</h3>
+              <h4>MUNDO</h4>
+            </div>
+          </div>
+        </div>
+        <div class="hero-buttons">
+          <a href="./pages/videos/index.html">ENTRAR</a>
+          <a href="./pages/login/cadastro.html">CADASTRAR</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="imgs/computer.svg" alt="" />
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-image">
+        <img src="imgs/phone.png" alt="" />
+      </div>
+      <div class="about-description">
+        <div class="about-title">
+          <h1>Plataforma de Ensino</h1>
+          <h1>DE PROGRAMAÇÃO</h1>
+        </div>
+        <div class="about-about">
+          <p>
+             A InCode foi criada por 5 estudantes de tecnologia, é uma plataforma de ensino de programação, focada em facilitar o 
+             aprendizado através de um conteúdo didático e dinâmico.
+          </p>
+          <p>
+             Conduzidos com base na ODS 4, que busca garantir uma educação inclusiva, equitativa e de qualidade para todos, decidimos 
+             criar uma solução inovadora que quebra barreiras educacionais.
+          </p>
+          <p>
+           A plataforma é uma plataforma de aprendizagem cuidadosamente projetado para democratizar o acesso à educação 
+           de programação e promover a inclusão de todos os estudantes! independentemente de suas origens ou habilidades.
+          </p>
+        </div>
+      </div>
+      <div class="about-image-mobile">
+        <img src="imgs/phone.svg" alt="" />
+      </div>
+    </section>
+
+    <section class="why-section" id="why">
+      <div class="why-description">
+        <div class="why-title">
+          <h1>Por quê utilizar a</h1>
+          <img src="./imgs/incode.svg" alt="incode?" class="why-custom-title" />
+        </div>
+        <p>
+          Você que estuda, trabalha e tem muito b.o pra resolver, mas queria
+          muito ingressar no mercado de trabalho aprendendo programação de
+          maneira pratica, ou saber como desenvolver um site e até um
+          aplicativo para sua empresa...
+        </p>
+      </div>
+      <div class="why-image">
+        <img src="./imgs/whyincode.svg" alt="" />
+      </div>
+    </section>
+
+    <section class="team-section" id="team">
+      <h1><strong>In</strong>tegrantes</h1>
+      <div class="team-group">
+        <div class="member">
+          <div class="member-photo">
+            <img src="./imgs/alangomes.png" alt="" />
+          </div>
+          <div class="member-description">
+            <h1>Alan Gomes</h1>
+            <p>&#60;/Designer&#62;</p>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member-photo">
+            <img src="./imgs/gustavobispo.png" alt=""/>
+          </div>
+          <div class="member-description">
+            <h1>Gustavo Bispo</h1>
+            <p>&#60;/Programdor&#62;</p>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member-photo">
+            <img src="./imgs/felipemiguel.png" alt="" />
+          </div>
+          <div class="member-description">
+            <h1>Felipe Marinho</h1>
+            <p>&#60;/Programador&#62;</p>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member-photo">
+            <img src="./imgs/brenobassi.png" alt="" />
+          </div>
+          <div class="member-description">
+            <h1>Breno Bassi</h1>
+            <p>&#60;/Programador&#62;</p>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member-photo">
+            <img src="./imgs/guilhermeconstantino.png" alt="" />
+          </div>
+          <div class="member-description">
+            <h1>Guilherme Peixoto</h1>
+            <p>&#60;/Designer&#62;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- CONTEÚDO -->
+
+  <!-- FOOTER -->
+  <div></div>
+  <!-- FOOTER -->
+
+  <script src="https://kit.fontawesome.com/e1f7a1b8d0.js" crossorigin="anonymous"></script>
+  <script src="script/navbar.js"></script>
+  <script src="theme.js"></script>
+</body>
+
+</html>

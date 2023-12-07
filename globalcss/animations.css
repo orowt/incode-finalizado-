@@ -1,0 +1,41 @@
+@keyframes fromBottom {
+  0% {
+    bottom: -10px;
+    opacity: 0;
+  }
+  50% {
+    bottom: 0;
+    opacity: 1;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero-description > h1 {
+  animation: fromBottom 1s ease-in-out;
+  position: relative;
+}
+
+.hero-inner-description {
+  animation: fromBottom 1s ease-in-out;
+  position: relative;
+}
+
+.hero-image > img {
+  animation: appear 1s;
+}
+
+img {
+  animation: appear 1s ease-in-out;
+}

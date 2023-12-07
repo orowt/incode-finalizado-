@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="normal">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../../../globalcss/resets.css" />
+    <link rel="stylesheet" href="../../../globalcss/animations.css">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../../navbar.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <aside class="sidenav">
+      <div class="top">
+        <a href="../../../index.html">
+          <img src="../../../imgs/incode-logo-2.svg" alt="Logo da Incode" class="logo" />
+          <button onclick="toggleNavbar()" class="togglenavbarbutton">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+        </a>
+      </div>
+      <nav class="navbar">
+        <a class="navitem" href="../index.html">
+          <button>
+            <p>INÍCIO</p>
+          </button>
+        </a>
+        <a class="navitem" href="../../profile/index.html">
+          <button>
+            <p>PERFIL</p>
+          </button>
+        </a>
+        <a class="navitem" href="https://discord.gg/kAGaWHVG">
+          <button>
+            <p>COMUNIDADE</p>
+          </button>
+        </a>
+      </nav>
+      <div class="themebuttons">
+        <button class="switch" onclick="setTheme('normal')"> <i class="fa-solid fa-star"></i></button>
+        <button class="switch" onclick="setTheme('light')"> <i class="fa-solid fa-sun"></i></button>
+        <button class="switch" onclick="setTheme('dark')"> <i class="fa-solid fa-moon"></i></button>
+      </div>
+    </aside>
+    <!-- NAVBAR -->
+
+    <!-- CONTENT -->
+    <div class="container">
+      <button onclick="toggleNavbar()" class="togglenavbarbutton">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <a href="../index.html" class="backbutton">VOLTAR</a>
+      <div id="videos"></div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/e1f7a1b8d0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../script/navbar.js"></script>
+    <script src="../../../theme.js"></script>
+    <script src="./videos.js"></script>
+  </body>
+</html>

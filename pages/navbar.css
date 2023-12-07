@@ -1,0 +1,143 @@
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+
+    background-color:var(--fourth);
+    width: 100%;
+    left: -100%;
+    height: 100vh;
+    max-height: 100vh;
+    border-right: 1px solid var(--secondary);
+    z-index: 99;
+    transition: 250ms;
+}
+
+a {
+    color: var(--typography);
+}
+
+.togglenav {
+    left: 0;
+}
+
+.togglenavbarbutton {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    margin: 10px;
+    background-color: var(--typography);
+    color: var(--primary);
+}
+
+.container > button {
+    position: fixed;
+}
+
+@media (min-width: 768px) {
+    .sidenav {
+        width: 100%;
+        max-width: 225px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .togglenavbarbutton {
+        display: none;
+    }
+
+    .sidenav {
+        left: 0;
+    }
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.top > a > img {
+    width: 150px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.navitem {
+    width: 100%;
+}
+
+.navitem:hover {
+    background-color: var(--tertiary);
+}
+
+.navitem > button {
+    width: 100%;
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--typography);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navitem > button > p {
+    position: relative;
+}
+
+.navitem > button > p::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    border-radius: 8px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #a66ebb;
+
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.navitem:hover > button > p::after {
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+.themebuttons {
+    padding-bottom: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.themebuttons > .switch {
+    background: none;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--typography);
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.backbutton {
+    padding-left: 90px;
+    cursor: pointer;
+    text-decoration: underline;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+ <body>
+    
+    <button id="voltar"></button>
+
+    <script>
+        document.getElementById("voltar").addEventListener("click", function () {
+            window.history.back();
+        });
+    </script>
+    
+    <div class="wrapper">
+
+        <form action="#">
+            
+            <img src="img/incode.png">
+            <div class="input-box">
+                <input type="text" placeholder="E-mail do usuário" required>
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Confirmação do E-mail" required>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Senha" required>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Confirmação da senha" required>
+            </div>
+
+            <button type="submit" class="btn">Logar</button>
+
+            <div class="login-link">
+                <p>Já tem uma conta? <a href="./login/login.html">Logar</a></p>
+            </div>
+
+            <div class="login-container">
+
+            </div>
+        </form>
+    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+</body>
+
+</html>

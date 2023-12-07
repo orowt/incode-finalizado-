@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "image": "imgs/fundovideo.jpg",
+        "name": "Curso Java #01",
+        "title": "Seja um Programador",
+        "link": "./videosJava1.html"
+    },
+    {
+        "id": 2,
+        "image": "imgs/fundovideo.jpg",
+        "name": "Curso Java #02",
+        "title": "Para que serve o Java?",
+        "link": "https://youtu.be/Mp0vhMDI7fA"
+    },
+    {
+        "id": 3,
+        "image": "imgs/fundovideo.jpg",
+        "name": "Curso Java #03",
+        "title": "Instalando o Java3 e o IDLE",
+        "link": "https://youtu.be/VuKvR1J2LQE"
+    },
+    {
+        "id": 4,
+        "image": "imgs/fundovideo.jpg",
+        "name": "Curso Java #04",
+        "title": "Primeiros comandos em Java3",
+        "link": "https://youtu.be/31llNGKWDdo"
+    },
+    {
+        "id": 5,
+        "image": "imgs/fundovideo.jpg",
+        "name": "Curso Java #05",
+        "title": "Instalando o PyCharm e o QJava3",
+        "link": "https://youtu.be/ElRd0cbXIv4"
+    },
+    {
+        "id": 6,
+        "image": "imgs/fundovideo.jpg",
+        "name": "Curso Java #06",
+        "title": "Tipos Primitivos e Saída de Dados",
+        "link": "https://youtu.be/hdDHg1p3YVc"
+    },
+    {
+        "id": 7,
+        "image": "imgs/fundovideo.jpg",
+        "name": "Curso Java #07",
+        "title": "Operadores Aritméticos",
+        "link": "https://youtu.be/Vw6gLypRKmY"
+    },
+    {
+        "id": 8,
+        "image": "imgs/fundovideo.jpg",
+        "name": "Curso Java #08",
+        "title": "Utilizando Módulos",
+        "link": "https://youtu.be/oOUyhGNib2Q"
+    },
+    {
+        "id": 9,
+        "image": "imgs/fundovideo.jpg",
+        "name": "Curso Java #09",
+        "title": "Manipulando Texto",
+        "link": "https://youtu.be/a7DH88vk2Sk"
+    },
+    {
+        "id": 10,
+        "image": "imgs/fundovideo.jpg",
+        "name": "Curso Java #10",
+        "title": "Condições (Parte 1)",
+        "link": "https://youtu.be/K10u3XIf1-Q"
+    },
+    {
+        "id": 11,
+        "image": "imgs/fundovideo.jpg",
+        "name": "Curso Java #11",
+        "title": "Cores no Terminal",
+        "link": "https://youtu.be/0hBIhkcA8O8"
+    },
+    {
+        "id": 12,
+        "image": "imgs/fundovideo.jpg",
+        "name": "Curso Java #12",
+        "title": "Condições Aninhadas",
+        "link": "https://youtu.be/j9bYDjaAYzw"
+    }
+]

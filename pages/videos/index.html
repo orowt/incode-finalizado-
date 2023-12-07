@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="normal">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Início</title>
+
+  <link rel="stylesheet" href="../../globalcss/resets.css" />
+  <link rel="stylesheet" href="../../globalcss/animations.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="../navbar.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <aside class="sidenav">
+    <div class="top">
+      <a href="../../index.html">
+        <img src="../../imgs/incode-logo-2.svg" alt="Logo da Incode" class="logo" />
+        <button onclick="toggleNavbar()" class="togglenavbarbutton">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+      </a>
+    </div>
+    <nav class="navbar">
+      <a class="navitem" href="#">
+        <button>
+          <p>INÍCIO</p>
+        </button>
+      </a>
+      <a class="navitem" href="../profile/index.html">
+        <button>
+          <p>PERFIL</p>
+        </button>
+      </a>
+      <a class="navitem" href="https://discord.gg/zdynS6ftW5">
+        <button>
+          <p>COMUNIDADE</p>
+        </button>
+      </a>
+    </nav>
+    <div class="themebuttons">
+      <button class="switch" onclick="setTheme('normal')"> <i class="fa-solid fa-star"></i></button>
+      <button class="switch" onclick="setTheme('light')"> <i class="fa-solid fa-sun"></i></button>
+      <button class="switch" onclick="setTheme('dark')"> <i class="fa-solid fa-moon"></i></button>
+    </div>
+  </aside>
+  <!-- NAVBAR -->
+
+  <!-- CONTENT -->
+  <div class="container">
+    <button onclick="toggleNavbar()" class="togglenavbarbutton">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <div class="containertitle">
+      <div class="containertitleinner">
+        <i class="fa-solid fa-calendar"></i>
+        <strong>Videos</strong>
+      </div>
+      <p>|</p>
+      <h2>GERAL</h2>
+    </div>
+    <div class="content">
+      <div class="introduction">
+        <div class="introtitle">
+          <i class="fa-solid fa-play"></i>
+          <h2>Introdução</h2>
+        </div>
+        <a class="frontvideo" href="https://incodeetecmcm.blogspot.com/">
+          <img src="../../imgs/fundovideo.jpg" alt="" />
+          <div class="frontvideo-inner">
+            <link href="https://incodeetecmcm.blogspot.com">
+            <img src="../../imgs/incode-logo-2.svg" alt="" class="" />
+            <h2>Qual o nosso objetivo?</h2>
+          </div>
+        </a>
+      </div>
+      <div class="videos">
+        <div class="videostitle">
+          <i class="fa-solid fa-play"></i>
+          <h2>Vídeos / 01-06</h2>
+        </div>
+        <div class="languages">
+          <div class="language">
+            <a href="./videos-html/index.html" class="languagepicture">
+              <img src="../../imgs/html logo.png" alt="" />
+            </a>
+            <p>HTML</p>
+          </div>
+          <div class="language">
+            <a href="./videos-css/index.html" class="languagepicture">
+              <img src="../../imgs/css logo.png" alt="" />
+            </a>
+            <p>CSS</p>
+          </div>
+          <div class="language">
+            <a href="./videos-javascript/index.html" class="languagepicture">
+              <img src="../../imgs/java script logo.png" alt="" />
+            </a>
+            <p>JavaScript</p>
+          </div>
+          <div class="language">
+            <a href="./videos-php/index.html" class="languagepicture">
+              <img src="../../imgs/php logo.png" alt="" />
+            </a>
+            <p>PHP</p>
+          </div>
+          <div class="language">
+            <a href="./videos-python/index.html" class="languagepicture">
+              <img src="../../imgs/python logo.png" alt="" />
+            </a>
+            <p>Python</p>
+          </div>
+          <div class="language">
+            <a href="./videos-java/index.html" class="languagepicture">
+              <img src="../../imgs/java logo 1.png" alt="" />
+            </a>
+            <p>Java</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/e1f7a1b8d0.js" crossorigin="anonymous"></script>
+  <script src="../script/navbar.js"></script>
+  <script src="../../theme.js"></script>
+</body>
+
+</html>
